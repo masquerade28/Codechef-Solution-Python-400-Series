@@ -8,11 +8,19 @@
   Determine whether Chef passes the exam or not.
 '''
 
-
+# Taking Input For Number Of Test Cases
 T = int(input())
+
+# Making An Empty List For Inputs For Each Test Cases
 test = []
+
+# Making An Empty List For Inputs For Each Test Cases 
 for t in range(T):
-    test.append([int(t) for t in input().split()])
+  test.append([int(t) for t in input().split()])
+
+# Displaying Result Of The Test Cases 
 for i in test:
-    PassTheExam = "PASS" if (i[0]+i[1]+i[2] >= 100) and i[0] >= 10 and i[1] >= 10 and i[2] >= 10 else "FAIL"
-    print(PassTheExam)
+
+  # Checking The Given Conditions To Find Out Whether Chef Is Pass Or Not
+  PassTheExam = "PASS" if (i[0]+i[1]+i[2] >= 100) and i[0] >= 10 and i[1] >= 10 and i[2] >= 10 else "FAIL"
+  print(PassTheExam)
